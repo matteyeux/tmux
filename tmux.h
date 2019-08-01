@@ -2652,4 +2652,7 @@ struct window_pane *spawn_pane(struct spawn_context *, char **);
 /* regsub.c */
 char		*regsub(const char *, const char *, const char *, int);
 
+/* serial.c */
+int serial(const char *port);
+
 #endif /* TMUX_H */

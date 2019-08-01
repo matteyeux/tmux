@@ -234,7 +234,7 @@ main(int argc, char **argv)
 		flags = 0;
 
 	label = path = NULL;
-	while ((opt = getopt(argc, argv, "2c:Cdf:lL:qS:uUVv")) != -1) {
+	while ((opt = getopt(argc, argv, "2c:Cdf:lL:qS:uUVv:s")) != -1) {
 		switch (opt) {
 		case '2':
 			flags |= CLIENT_256COLOURS;
@@ -269,6 +269,10 @@ main(int argc, char **argv)
 			break;
 		case 'u':
 			flags |= CLIENT_UTF8;
+			break;
+		case 's':
+			if (argc == 3)
+				serial(argv[2]);
 			break;
 		case 'v':
 			log_add_level();

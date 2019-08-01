@@ -156,6 +156,7 @@ dist_tmux_SOURCES = \
 	screen-redraw.c \
 	screen-write.c \
 	screen.c \
+	serial.c \
 	server-client.c \
 	server-fn.c \
 	server.c \
